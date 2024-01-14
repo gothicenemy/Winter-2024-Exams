@@ -2,7 +2,7 @@
 
 const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-_parse_day_ = (s) => {
+const parseWeek = (s) => {
   for (let i = 0; i < Days.length; i++) {
     if (s.startsWith(Days[i].toLowerCase())) {
       return i + 1;
@@ -11,4 +11,4 @@ _parse_day_ = (s) => {
   return -1;
 };
 
-module.exports = _parse_day_;
+module.exports = parseWeek;
