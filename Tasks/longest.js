@@ -2,12 +2,11 @@
 'use strict';
 
 const longest = function (line = [] {
-  x = -1;
-
-  for (i of line) {
+  let x = -1;
+  let s = undefined;
+  for (const i of line) {
     if (i.length > x) {
       x = i.length;
-
       s = i;
 
     }
