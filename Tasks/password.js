@@ -1,6 +1,6 @@
 // Generate random password
 
-const GeneratePassword = (alphabet, length) => {
+const generatePassword = (alphabet, length) => {
   const MAX = alphabet.length;
   key = '';
   for (let i = 0; i < length; i++) {
@@ -10,4 +10,4 @@ const GeneratePassword = (alphabet, length) => {
   return key;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
