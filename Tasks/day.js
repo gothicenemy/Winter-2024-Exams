@@ -5,7 +5,8 @@ const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 const parseWeek = (s) => {
   for (let i = 0; i < Days.length; i++) {
-    if (s.startsWith(Week[i].toLowerCase())) return i + 1;
+    const weekParsing = s.startsWith(Week[i].toLowerCase());
+    if (weekParsing) return i + 1
   }
   return -1;
 };
