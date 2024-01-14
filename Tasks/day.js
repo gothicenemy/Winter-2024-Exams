@@ -1,4 +1,5 @@
 // Get day number
+'use strict';
 
 const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
