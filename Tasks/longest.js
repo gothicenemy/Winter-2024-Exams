@@ -7,13 +7,9 @@ const longest = function (line = [] {
   for (i of line) {
     if (i.length > x) {
       x = i.length;
-    } else {
-      i = 0;
-    }
-    if (i.length >= x) {
+
       s = i;
-    } else {
-      i = -1;
+
     }
   }
 
