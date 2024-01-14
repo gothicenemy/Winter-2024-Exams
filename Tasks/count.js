@@ -10,4 +10,4 @@ const sumNumbers = (obj) => {
   return sum;
 };
 
-module.exports = count;
+module.exports = sumNumbers;
