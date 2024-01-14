@@ -2,9 +2,8 @@
 'use strict';
 
 const splitArray = (splitPoint, array) => {
-  const begin = array.slice(0, splitPoint);
-  const len = array.length;
-  array = array.slice(splitPoint, len);
+  const begin = array.splice(0, splitPoint);
+  array = array.splice(-splitPoint);
   return [begin, array];
 };
 
