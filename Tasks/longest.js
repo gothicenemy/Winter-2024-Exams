@@ -1,14 +1,12 @@
 // Find longest string
 'use strict';
 
-const longest = (line = []) => {
-  let x = -1;
-  let s = undefined;
-  for (const i of line) {
-    if (i.length > x) {
-      x = i.length;
-      s = i;
-
+const longestWord = (line = []) => {
+  let maxLength = -1;
+  let longest = undefined;
+  for (const word of line) {
+    if (word.length > maxLength) {
+      maxLength = word.length;
     }
   }
 
